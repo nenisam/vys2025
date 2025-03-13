@@ -65,6 +65,25 @@
         .text-min {
             font-size: 13px;
         }
+
+        .container-dashboard {
+            width:calc(100% - 57px);
+            max-width:1143px;
+            margin:40px auto;
+        }
+        .container-iframe {
+            width:100%;
+            height:0;
+            overflow:hidden;
+            position:relative;
+        }
+
+        .container-iframe iframe {
+            width:calc(100% + 57px);
+            height:100%;
+            position:absolute;
+            left:-57px;
+        }
         .conclusion {
             background-color: #0446A8;
             color: #f0f0f0;
@@ -123,30 +142,30 @@
             <div class="col-xl-10 offset-xl-1">
 
                 <!-- Dashboard 1 -->
-                <div style="margin:40px auto 40px 57px;max-width:1143px;width:calc(100% - 57px);">
-                    <div style="height:0;overflow:hidden;padding-bottom:68.25%;position:relative;width:100%;">
-                        <iframe style="height:100%;position:absolute;width:calc(100% + 57px);left:-57px;"  src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/LdvvE" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+                <div class="container-dashboard">
+                    <div class="container-iframe" style="padding-bottom:68.25%;">
+                        <iframe src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/LdvvE" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
                     </div>
                 </div>
 
                 <!-- Dashboard 2 -->
-                <div style="margin:40px auto 40px 57px;max-width:1143px;width:calc(100% - 57px)">
-                    <div style="height:0;overflow:hidden;padding-bottom:72.25%;position:relative;width:100%;">
-                        <iframe style="height:100%;position:absolute;width:calc(100% + 57px);left:-57px;"  src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/p_xvlbtmeiqd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+                <div class="container-dashboard">
+                    <div  class="container-iframe" style="padding-bottom:72.25%;">
+                        <iframe src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/p_xvlbtmeiqd" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
                     </div>
                 </div>
 
                 <!-- Dashboard 3 -->
-                <div style="margin:40px auto 40px 57px;max-width:1143px;width:calc(100% - 57px)">
-                    <div style="height:0;overflow:hidden;padding-bottom:54.25%;position:relative;width:100%;">
-                        <iframe style="height:100%;position:absolute;width:calc(100% + 57px);left:-57px;"  src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/p_r476y59iqd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+                <div class="container-dashboard">
+                    <div class="container-iframe" style="padding-bottom:54.25%;">
+                        <iframe  src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/p_r476y59iqd" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
                     </div>
                 </div>
 
                 <!-- Dashboard 4 -->
-                <div style="margin:40px auto 40px 57px;max-width:1143px;width:calc(100% - 57px)">
-                    <div style="height:0;overflow:hidden;padding-bottom:60.75%;position:relative;width:100%;">
-                        <iframe style="height:100%;position:absolute;width:calc(100% + 57px);left:-57px;"  src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/p_icfagnejqd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+                <div class="container-dashboard">
+                    <div class="container-iframe" style="padding-bottom:60.75%;">
+                        <iframe src="https://lookerstudio.google.com/embed/reporting/1040e265-f532-41ab-bdcb-f6c9449ca0f3/page/p_icfagnejqd" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
                     </div>
                 </div>
 
@@ -160,8 +179,8 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="conclusion">
-                    <p>La distribución de los montos adjudicados refleja una alta concentración, donde el 20% de los proveedores acumula el 85,27% del total. En Defensa Nacional, los contratos de mayor monto están en manos de pocos proveedores, lo que sugiere un posible riesgo de monopolización y dependencia de actores específicos. En contraste, en Educación Nacional, la distribución es más equitativa, reduciendo este riesgo y favoreciendo la competencia.</p>
-                    <p>Esto resalta la importancia de monitorear y regular la concentración en sectores estratégicos para evitar prácticas monopólicas y garantizar un acceso equitativo a las adjudicaciones.</p>
+                    <p>La distribución de los montos de las compras realizadas en la Tienda Virtual del Estado Colombiano refleja una alta concentración en la adjudicación de recursos. Bogotá representa el 81% de las compras, mientras que el 20% de los proveedores acumula el 85,27% del total. En Defensa Nacional, los contratos de mayor monto están en manos de pocos proveedores, lo que sugiere un posible riesgo de monopolización y dependencia de actores específicos. En contraste, en Educación Nacional, la distribución es más equitativa, reduciendo este riesgo y favoreciendo la competencia.</p>
+                    <p>Estos datos resaltan la importancia de monitorear y regular la concentración en sectores estratégicos para evitar prácticas monopólicas y garantizar un acceso equitativo a las adjudicaciones.</p>
                 </div>
             </div>
         </div>
